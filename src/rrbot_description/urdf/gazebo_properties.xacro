@@ -1,4 +1,19 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rrbot">
-    
+
+  <!-- Link1 -->
+  <gazebo reference="link1">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <!-- Link2 -->
+  <gazebo reference="link2">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <!-- Link3 -->
+  <gazebo reference="link3">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
 </robot>
