@@ -12,4 +12,22 @@ RRBot, or ''Revolute-Revolute Manipulator Robot'', is a simple 3-linkage, 2-join
 
 ![rrbot rviz](https://github.com/lyleokoth/rrbot/blob/main/resources/images/rrbot_rviz.png)
 
+## The Setup
+
 To get rrbot, clone the [RRBot github repo](https://github.com/lyleokoth/rrbot), and build the workspace.
+
+```
+git clone https://github.com/lyleokoth/rrbot
+cd rrbot
+catkin_make
+source devel/setup.bash
+```
+
+## Run
+
+To display rrbot in rviz:
+
+```
+source devel/setup.bash
+roslaunch bot_control bot_control.launch
+```
