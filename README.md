@@ -1,2 +1,3 @@
 # RRBot - A double inverted pendulum based on ROS Noetic.
-Revolute Revolute Manipulator Robot based on ROS noetic.
+
+![rrbot rviz](https://github.com/lyleokoth/rrbot/blob/main/resources/images/rrbot_rviz.png)
