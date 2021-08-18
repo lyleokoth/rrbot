@@ -31,3 +31,24 @@ To display rrbot in rviz:
 source devel/setup.bash
 roslaunch bot_control bot_control.launch
 ```
+
+![rrbot rviz](https://github.com/lyleokoth/rrbot/blob/main/resources/images/rrbot_rviz.png)
+
+You should also be able to play with the slider bars in the Joint State Publisher window to move the two joints.
+
+It is important that while converting your robot to work in Gazebo, you don't break Rviz or other ROS-application functionality, so its nice to occasionally test your robot in Rviz to make sure everything still works.
+
+The gazebo_ros_control tutorial will explain how to use Rviz to monitor the state of your simulated robot by publishing /joint_states directly from Gazebo. In the previous example, the RRBot in Rviz is getting its /joint_states from a fake joint_states_publisher node (the window with the slider bars).
+
+## RRBot Workspace 
+
+The workspace contains two packages:
+
+- ### rrbot_description
+    - contains the files necessary to display the rrbot. It is mainly used to showcase the robots appearnce in rviz and later, gazebo.
+- ### rrbot_control
+    - rrbot_control contains the files used to control the rrbot.
+
+## Examine the RRBot URDF
+
+The rest of this tutorial will refer to various aspects of the RRBot URDF. Go ahead and view the rrbot.xacro file now:
