@@ -51,4 +51,22 @@ The workspace contains two packages:
 
 ## Examine the RRBot URDF
 
-The rest of this tutorial will refer to various aspects of the RRBot URDF. Go ahead and view the rrbot.xacro file now:
+The rest of this tutorial will refer to various aspects of the RRBot URDF. Go ahead and view the [rrbot.xacro](https://github.com/lyleokoth/rrbot/blob/main/src/rrbot_description/urdf/rrbot.xacro) file now:
+
+```
+rosed rrbot_description rrbot.xacro
+```
+
+Note that we are using Xacro to make some of the link and joint calculations easier. We are also including six additional files:
+- [rrbot_properties.xacro](https://github.com/lyleokoth/rrbot/blob/main/src/rrbot_description/urdf/rrbot_properties.xacro) 
+    - Contains the rrbot physical properties such as link dimensions and masses
+- macros.xacro
+    - Contains macros that are mainly used to calculate the link inertias
+- materials.xacro
+    - Contains the materials used in visualizing the links in rviz.
+- gazebo_properties.xacro
+    - This contains the link physical properties used in visualizing the robot in gazebo, such as color.
+- gazebo_phyisics.xacro
+    - This contains link properties used by gazebo to properly simulate the robot, such as friction.
+- gazebo_plugins.xacro
+    - This contains the plugins that are used to in gazebo to simulate various sensors and actuators e.g lidar and camera.
