@@ -4,10 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
         - /Status1
-        - /RobotModel1
-        - /RobotModel1/Links1
         - /RobotModel1/Links1/camera_link1
         - /RobotModel1/Links1/hokuyo_link1
         - /RobotModel1/Links1/link11
@@ -72,32 +69,32 @@ Visualization Manager:
         Link Tree Style: Links in Alphabetic Order
         camera_link:
           Alpha: 1
-          Show Axes: true
+          Show Axes: false
           Show Trail: false
           Value: true
         hokuyo_link:
           Alpha: 1
-          Show Axes: true
+          Show Axes: false
           Show Trail: false
           Value: true
         link1:
           Alpha: 1
-          Show Axes: true
+          Show Axes: false
           Show Trail: false
           Value: true
         link2:
           Alpha: 1
-          Show Axes: true
+          Show Axes: false
           Show Trail: false
           Value: true
         link3:
           Alpha: 1
-          Show Axes: true
+          Show Axes: false
           Show Trail: false
           Value: true
         world:
           Alpha: 1
-          Show Axes: true
+          Show Axes: false
           Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
@@ -133,7 +130,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.906552314758301
+      Distance: 8.399781227111816
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -141,9 +138,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -0.8451828360557556
-        Y: -0.7123053073883057
-        Z: 0.8296695947647095
+        X: -1.0376057624816895
+        Y: -1.1223496198654175
+        Z: 1.2119336128234863
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
